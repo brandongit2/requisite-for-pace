@@ -15,7 +15,10 @@ $(function() {
     setInterval(function() {
         if (loop) {
             videoFrame = (window.pageYOffset / pageHeight) * video.duration;
-            video.currentTime = videoFrame;
+            if (Math.abs(videoFrame - video.currentTime) > 0.01) {
+                video.currentTime = videoFrame;
+                console.log(videoFrame);
+            }
         }
-    }, 50);
+    }, 20);
 });

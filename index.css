@@ -5,6 +5,7 @@ body {
 
 video {
     height: 100vh;
+    width: calc(100vh / 9 * 16);
     position: fixed;
     top:0px;
     left: calc((100vw - (100vh / 9 * 16)) / 2);
