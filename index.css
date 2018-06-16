@@ -1,0 +1,9 @@
+body {
+    margin: 0px;
+}
+
+video {
+    width: 100vw;
+    position: fixed;
+    top:0px;
+}
