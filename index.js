@@ -7,7 +7,7 @@ $(function() {
 
     video.addEventListener('canplay', function() {
         pageHeight = video.duration * 24 * pixelsPerFrame;
-        document.getElementById('set-height').style.height = pageHeight + 'px';
+        document.getElementById('set-height').style.height = pageHeight + window.innerHeight + 'px';
 
         loop = true;
     });

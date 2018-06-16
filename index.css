@@ -1,9 +1,11 @@
 body {
     margin: 0px;
+    background: black;
 }
 
 video {
-    width: 100vw;
+    height: 100vh;
     position: fixed;
     top:0px;
+    left: calc((100vw - (100vh / 9 * 16)) / 2);
 }
