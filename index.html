@@ -4,12 +4,55 @@
         <meta charset="utf-8">
         <title>tetroid</title>
 
+        <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="index.js"></script>
     </head>
     <body>
-        <div id="set-height"></div>
-        <video id="video" src="background2.mkv" preload="auto"></video>
+        <video id="video" type="video/x-matroska" src="background2.mkv" preload="auto"></video>
+        <div id="set-height">
+            <div id="container">
+                <p id="author">a game by <b>Brandon Tsang</b></p>
+                <div class="content" style="position:relative; top:120vh;">
+                    <p class="content">
+                        <b>Tetroid</b> takes the classic game Tetris to a whole 'nother level.
+                        Experience the game you know and love, now in three dimensions. Now
+                        available on PC and Mac.
+                    </p>
+
+                    <div class="spacer" style="height:5vh"></div>
+
+                    <h2>How to play</h2>
+                    <p>
+                        The game consists of blocks called <b>tetrominoes</b>. As they fall, your
+                        job is to maneuver them around to fit into the bottom of the grid. If you
+                        get an entire layer filled, that layer disappears and you gain points.
+                    </p>
+                    <div style="width:100%; display:flex; justify-content:space-evenly;">
+                        <div>
+                            <video src="instructions.webm" style="float:left; height:70vh; margin: 1rem;" autoplay loop></video>
+                            <p>Use the QWEASD keys to rotate the tetromino.</p>
+                        </div>
+                        <div>
+                            <video src="instructions.webm" style="float:left; height:70vh; margin: 1rem;" autoplay loop></video>
+                            <p>Use the arrow keys to move the tetromino.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="footer">
+                    <img src="logo-256px.png" id="logo">
+                    <div style="line-height:0.5;">
+                        <p>Made by Brandon Tsang for <u>ICS3U1</u> and <u>TGJ3M1</u>.</p>
+                        <p style="color:#818181;">Don Mills CI, 2018</p>
+                    </div>
+                    <div id="links">
+                        <a>Brand identity</a>
+                        <a>Making of</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

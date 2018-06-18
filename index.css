@@ -1,12 +1,74 @@
 body {
     margin: 0px;
     background: black;
+    font-family: 'Oxygen', sans-serif;
+    color: white;
+    overflow-x: hidden;
 }
 
-video {
+#set-height {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#container {
+    margin: 4rem;
+    width: calc(100% - 8rem);
+    height: calc(100% - 8rem);
+}
+
+#author {
+    position: absolute;
+    top: calc(100vh - 8rem);
+    right: 5%;
+}
+
+div.content {
+    width: 100%;
+    text-align: center;
+}
+
+p.content {
+    font-size: 18pt;
+}
+
+h2 {
+    font-size: 24pt;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: calc(100% - 8rem);
+    height: 200px;
+    background: #e8e8e8;
+    display: flex;
+    padding: 0px 4rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+}
+
+#logo {
+    height: 70%;
+}
+
+#links {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#video {
     height: 100vh;
     width: calc(100vh / 9 * 16);
     position: fixed;
-    top:0px;
+    top: 0px;
     left: calc((100vw - (100vh / 9 * 16)) / 2);
+    z-index: -1;
 }
